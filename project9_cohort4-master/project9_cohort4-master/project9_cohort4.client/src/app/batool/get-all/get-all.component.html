@@ -1,0 +1,9 @@
+<div class="card" style="width: 18rem;" *ngFor="let item of dataArray">
+  <img src="item.image" class="card-img-top" alt="{{item.name}}">
+  <div class="card-body">
+    <h5 class="card-title">{{item.name}}</h5>
+    <h5 class="card-title">{{item.price}}</h5>
+    <h5 class="card-title">{{item.image}}</h5>
+    <a routerLink="/getbyId/{{item.id}}" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
